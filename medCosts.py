@@ -132,7 +132,7 @@ if function == "Identify a Cost":
         matchedRows = matchedRows[columns_to_keep]  
         matchedRows = matchedRows.drop_duplicates(subset=["hospital_name"])  
 
-    st.dataframe(matchedRows, height=300)
+        st.dataframe(matchedRows, height=300)
 
 elif function == "Compare Costs":
     #Phase 1: Collect Info

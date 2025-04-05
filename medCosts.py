@@ -123,7 +123,7 @@ if function == "Identify a Cost":
     information = []
     information = identifyCostInformation() #eg. ["Baltimore", "JHH", "angiogram"]
 
-    matchedRows = pd.DataFrame(
+    matchedRows = pd.DataFrame()
     #Phase 2: Search
     if information:
         matchedRows = pd.DataFrame(priceSearch(information))

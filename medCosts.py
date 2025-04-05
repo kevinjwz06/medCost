@@ -127,7 +127,7 @@ if function == "Identify a Cost":
     #Phase 2: Search
     if information:
         matchedRows = priceSearch(information)
-
+        matchedRows = pd.DataFrame(matchedRows)
     columns_to_keep = [matchedRows.columns[0]] + [col for col in matchedRows.columns if "standard_charge" in col.lower()]
     matchedRows = matchedRows[columns_to_keep]  
     matchedRows = matchedRows.drop_duplicates(subset=["hospital_name"])  
